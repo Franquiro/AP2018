@@ -41,3 +41,4 @@ li.pdf{list-style-image: url('../img/icons/pdf-icon.png');}
 	margin-left:12%;
 	text-align:left;
 }
+.tablaEjemplo{padding:5px;border:1px solid black; border-collapse:collapse;}

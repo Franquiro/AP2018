@@ -411,10 +411,62 @@
     										</ul>
     										</p>
     									</li>
+                      <li><p><strong>Tablas:</strong></p><p>Para definir una tabla, se requieren las siguientes 4 etiquetas:</p>
+                        <ul>
+                          <li><p><strong>&lt;table&gt;:</strong> define una tabla</p></li>
+                          <li><p><strong>&lt;tr&gt;:</strong> <em>Table Row</em> define una fila de la tabla</p></li>
+                          <li><p><strong>&lt;th&gt;:</strong> <em>Table Header</em> define una celda de titulo.</p></li>
+                          <li><p><strong>&lt;td&gt;:</strong> <em>Table Data</em> define una celda de datos.</p></li>
+                        </ul>
+                        <p>Ejemplo de uso:</p>
+                        <div>
+                            <div style="float:left;width:50%;margin:0;">
+                              <table class="tablaEjemplo">
+                              <tr>
+                                <th class="tablaEjemplo">Nombre</th>
+                                <th class="tablaEjemplo">Apellido</th>
+                              </tr>
+                              <tr>
+                                <td class="tablaEjemplo">Juan</td>
+                                <td class="tablaEjemplo">Perez</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div style="float:left;width:50%;margin:0;">
+                            <code>
+                              &lt;table&gt;<br>
+                              <span style="margin-left:10px;">&lt;tr&gt;</span><br>
+                              <span style="margin-left:20px;">&lt;th&gt;Nombre&lt;/th&gt;</span><br>
+                              <span style="margin-left:20px;">&lt;th&gt;Apellido&lt;/th&gt;</span><br>
+                              <span style="margin-left:10px;">&lt;/tr&gt;</span><br>
+                              <span style="margin-left:10px;">&lt;tr&gt;</span><br>
+                              <span style="margin-left:20px;">&lt;td&gt;Juan&lt;/td&gt;</span><br>
+                              <span style="margin-left:20px;">&lt;td&gt;Perez&lt;/td&gt;</span><br>
+                              <span style="margin-left:10px;">&lt;/tr&gt;</span><br>
+                              &lt;/table&gt;<br>
+                            </code>
+                          </div>
+                        <div>
+                      </li>
+                      <li><p><strong>Formularios:</strong> Un formulario permite que el usuario ingrese datos en nuestra página web.</p>
+                        <ul>
+                          <li><p><strong>&lt;form&gt;:</strong> define el espacio para un formulario, dentro de esta etiqueta pondremos todos los elementos del mismo.</p></li>
+                          <li><p><strong>&lt;input&gt;:</strong> es el elemento que nos permite ingresar datos en nuestro formulario. puede ser de distintos tipos definidos por el atributo <em>type</em>:</p>
+                            <ul>
+                              <li><p><em>type="text"</em>: define un <em>input</em> de una linea de texto, como puede ser un nombre, un apellido, etc.</p></li>
+                              <li><p><em>type="radio"</em>: define un <em>input</em> de botones circulares. Nos permite elegir <strong>UNA</strong> de varias opciones.</p></li>
+                              <li><p><em>type="checkbox"</em>: define un <em>input</em> de selección multiple. A diferencia del boton circular, el <em>checkbox</em> nos permite elegir todas las opciones que queramos.</p></li>
+                              <li><p><em>type="submit"</em>: define un boton para ingresar los datos del formulario.
+                            </ul>
+                            <p><a href="ejemploForm.html" target="_blank">ver ejemplo de uso</a></p>
+                          </li>
+                        </ul>
+                      </li>
                     <li><p><strong>&lt;div&gt;&lt;/div&gt;:</strong>
                         Se utiliza para separar parte del codigo en un conjunto el cual tendra las mismas cualidades o pertenecera a una misma parte de la pagina.
                       </p>
                     </li>
+
                     <li><p><strong>id:</strong> Se ustiliza para identificar un elemento particular del codigo de HTML para usarlo como referencia en caso de necesitarlo o darle diseño con CSS. No puede haber más de un elemento con el mismo <em><b>id</b></em>.
                       </p>
                     </li>
@@ -452,7 +504,7 @@
                                 <img class="img-responsive img-centered" src="img/portfolio/CSS.png" alt="">
                                 <p>En esta sección encontrarás propiedades útiles para darle estilo a tus páginas!</p>
 								<p>La sintaxis de CSS consiste de un selector, que indica el elemento que se va a modificar,
- 									propiedades, que indican lo que se modificará de dicho elemento y valores que indican el valor 
+ 									propiedades, que indican lo que se modificará de dicho elemento y valores que indican el valor
  									que se le dará a esa propiedad.</p>
  								<p><strong>h1 {color:blue; font-size:12px;}</strong></p>
  								<p><strong>En el ejemplo anterior:</strong></p>
@@ -499,7 +551,7 @@
 									<li><p><strong>width:</strong> Define el ancho de un elemento. El valor lo podemos especificar en <em>Pixels</em>(px) o en un porcentaje del elemento que lo contiene.</p></li>
 
 									<li><p><strong>Box-Model</strong></p>
-									
+
 										<ul>
 											<li><p><strong>margin:</strong> Define el margen de un elemento. Los valores se pueden dar en <em>Pixels</em> o en un porcentaje del elemento que lo contiene.</p></li>
 
@@ -565,12 +617,12 @@
 										<li>Los nombres de las variables distinguen entre mayúsculas y minúsculas.</li>
 										<li>Los nombres de las variables <strong>NO</strong> pueden ser palabras reservadas del lenguaje.</li>
 									</ul>
-									
+
 									<h2>Declaración de Variables:</h2>
 									<p class="text-justify">Para declarar una variable nueva, basta con usar el prefijo <strong>var</strong> seguido del nombre de la variable.
-									Si se va a asignar un valor a dicha variable al momento de declararla, quedaría de la siguiente manera: <strong>var x = 5;</strong> 
+									Si se va a asignar un valor a dicha variable al momento de declararla, quedaría de la siguiente manera: <strong>var x = 5;</strong>
 									En caso que el valor vaya a ser asignado mas adelante, basta con declarar <strong>var x;</strong></p>
-                                    
+
                                     <h2>¿Qué puedo guardar en una variable?</h2>
                                     <p class="text-justify">En una variable puedo guardar varios tipos de <em>cosas</em>. En el ejemplo anterior, vimos como en una variable <strong>x</strong> se asignaba el valor <strong>5</strong>. Este valor, es lo que conocemos como un "<em>número entero</em>" o <strong>int</strong>. Veamos que otros tipos de datos podemos almacenar, y como se vería escrito en código.</p>
                                     <ul>
@@ -586,16 +638,16 @@
                                     <p class="text-justify">Es importante notar que, si bien tenemos múltiples tipos de datos que podemos almacenar en la memoria, no es necesario indicarle al lenguaje que tipo de variable vamos a declarar. ¡JavaScript se encargará de asignar el tipo de variable que corresponda al tipo de dato que ingresemos automaticamente!</p>
                                     <h2></h2>
 								</div>
-								
+
 								<div id = "condicionales">
 								</div>
-								
+
 								<div id="bucles">
 								</div>
-								
+
 								<div id="funciones">
 								</div>
-								
+
 								<div id="arreglos">
 								</div>
 								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
