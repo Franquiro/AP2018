@@ -32,6 +32,8 @@ li.folder{list-style-image: url('../img/icons/folder-icon.png');}
 
 li.pdf{list-style-image: url('../img/icons/pdf-icon.png');}
 .pdf a{vertical-align: 50%;}
+li.foto{list-style-image:url('../img/icons/jpeg.png');}
+.foto a{vertical-align:50%;}
 
 #variables h2{
 	font-size:24px;
