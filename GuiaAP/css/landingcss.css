@@ -1,0 +1,15 @@
+.blue{
+    height:100vh;
+}
+.red{
+    height: 100vh;
+    
+}
+body{
+    margin:0px;
+}
+.fullheight{
+    height: 100vh;
+    display: block;
+    vertical-align: middle;
+}
