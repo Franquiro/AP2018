@@ -35,16 +35,18 @@ li.pdf{list-style-image: url('../img/icons/pdf-icon.png');}
 li.foto{list-style-image:url('../img/icons/jpeg.png');}
 .foto a{vertical-align:50%;}
 
-#variables h2{
-	font-size:24px;
-}
-#variables ul{
-	width:75%;
-	margin-left:12%;
-	text-align:left;
-}
+#variables h2{font-size:24px;}
+#variables ul{width:75%;margin-left:12%;text-align:left;}
 .tablaEjemplo{padding:5px;border:1px solid black; border-collapse:collapse;}
 
 #phaser-image {
     background-color: #5912dd;
 }
+.azul{color:rgb(78, 153, 223);}
+.fuccia{color:#ff009d;}
+.turquesa{color:rgb(25, 142, 189);}
+.bold{font-weight:bold;}
+.cuadroNegro{background-color:#333333;color:#FFFFFF;font-size: 1.25em;}
+.margenSup{margin:20px auto;}
+.comentario{color:rgb(8, 80, 8);}
+#listaHTML{margin-left:10%; margin-right:10%;}

@@ -451,7 +451,7 @@
                                 <p class="item-intro text-muted"></p>
 								<img class="img-responsive img-centered" src="img/portfolio/html.jpg" alt="">
 								<div class="lista_etiquetas">
-									<ol>
+									<ol id="listaHTML">
 										<li><p><strong>&lt;!DOCTYPE html&gt;:</strong> debe ser la primer declaración en el documento (previo a &lt;html&gt;).
 												&lt;!DOCTYPE&gt; es una instrucción para el navegador que indica la versión de HTML que se está utilizando.</p></li>
 										<li><p><strong>&lt;html&gt;:</strong> La etiqueta &lt;html&gt; le indica al navegador que lo que está interpretando es un documento HTML.
@@ -695,15 +695,15 @@
                                 <p class="item-intro text-muted"></p>
                                 <img class="img-responsive img-centered" src="img/portfolio/javascript.png" alt="">
 								<!--<p>Contenido no disponible temporalmente</p>-->
-                                <div id="programar" class="centered">
+                                <div id="programar" class="text-justify">
 								<p><strong>Programar</strong> no es mas que dar instrucciones a una computadora, en un lenguaje que ella pueda interpretar y responder.</p>
 								<p>En el caso de <em>JavaScript</em>, y este curso, vamos a estar programando instrucciones para el navegador, es por ello que todos los programas que realicemos
 								estarán vinculados directamente a una página web. A continuación veremos algunas de las instrucciones que podemos darle a nuestro navegador.</p>
-                                    <h2>Vincular un archivo de JS con un archivo HTML</h2>
+                                    <h2 class="text-center">Vincular un archivo de JS con un archivo HTML</h2>
                                     <p class="text-justify"> Una vez que tengamos creado nuestro archivo de JavaScript (.js) es muy fácil vincularlo con nuestro documento HTML.<br>Lo que debemos hacer es abrir una nueva etiqueta <em>script</em> y decirle que tipo de documento vamos a vincular (con el atributo <em>type</em>) y a donde se encuentra dicho documento (con el atributo <em>src</em>). A continuación tenemos un ejemplo de cómo se vería una vinculación genérica:</p>
                                     <p class="text-center"><strong><span style="color: blue;">&lt;script</span> <span style="color: red;">type</span> = </strong><em><span style="color: darkcyan;">"text/javascript"</span></em> <strong><span style="color: red;"> src = </span></strong><em><span style="color: darkcyan;">"programa.js"</span></em><strong><span style="color: blue;"> &gt; &lt;/script&gt;</span></strong></p>
-								<h3>Mostrar Datos</h3>
-									<p><em><strong>console.log</strong>("texto");</em></p>
+								<h3 class="text-center">Mostrar Datos</h3>
+									<p class="text-center"><em><strong>console.log</strong>("texto");</em></p>
 								</div>
 								<div id="variables">
 									<h1>Variables</h1>
@@ -735,10 +735,82 @@
                                     </ul>
                                     <p class="text-justify">Es importante notar que, si bien tenemos múltiples tipos de datos que podemos almacenar en la memoria, no es necesario indicarle al lenguaje que tipo de variable vamos a declarar. ¡JavaScript se encargará de asignar el tipo de variable que corresponda al tipo de dato que ingresemos automaticamente!</p>
                                     <h2></h2>
-								</div>
+                                </div>
+                                <div id="operaciones">
+                                    <h1>Operadores Aritméticos</h1>
+                                    <p>Siempre que tengamos variables numéricas podremos realizar ciertas operaciones aritméticas básicas.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                    <div class="container col-sm-3"></div>
+                                    <div class="container col-sm-6">
+                                        <table>
+                                            <tr>
+                                                <th class="text-center">Operador</th>
+                                                <th class="text-center">Símbolo</th>
+                                                <th class="text-center">Descripción</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Suma</td>
+                                                <td class="text-center">+</td>
+                                                <td class="text-center">Devuelve la suma de dos o más variables</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Resta</td>
+                                                <td class="text-center">-</td>
+                                                <td class="text-center">Devuelve la resta de dos o más variables.</td>
+                                            </tr>
+                                            <tr>
+                                                    <td class="text-center">Multiplicación</td>
+                                                    <td class="text-center">*</td>
+                                                    <td class="text-center">Devuelve el producto de dos o más variables.</td>
+                                            </tr>
+                                            <tr>
+                                                    <td class="text-center">División</td>
+                                                    <td class="text-center">/</td>
+                                                    <td class="text-center">Devuelve el cociente entre dos o más variables.</td>
+                                            </tr>
+                                            <tr>
+                                                    <td class="text-center">Módulo</td>
+                                                    <td class="text-center">%</td>
+                                                    <td class="text-center">Devuelve el resto del cociente entre dos más variables.</td>
+                                            </tr>
+                                        </table>
+                                </div>
+                                <div class="container col-sm-3"></div>
+                                </div>
+                            </div>
+                                <a class="text-center" href="ejemplosOperadores.html" target="_blank">Ejemplos de uso</a>
+                                </div>
 
-								<div id = "condicionales">
-								</div>
+								<div id = "condicionales" class="text-justify">
+                                    <h1 class="text-center">Condicionales</h1>
+                                    <p>Un condicional nos permite tomar caminos distintos dentro del programa 
+                                    en función de una condición establecida.</p>
+                                    <p>Utilizando la <em>estructura de control</em> <div><span class="azul bold">if</span>(<span class="fuccia bold">condición</span>){<br><span class="comentario">//código</span><br>}</div>
+                                    <br>podemos aislar una porción de código que se ejecutará únicamente cuando la condición establecida se compruebe como verdadera.</p>
+                                    <p>Asimismo, podemos querer un camino alternativo para cuando la condición <span class="bold">NO</span> se verifique como verdadera esto lo haríamos complementando el bloque del <span class="azul bold">if</span> con un bloque <span class="bold"><span class="azul">else</span> INMEDIATAMENTE</span> despues de la llave de cierre del <span class="azul bold">if</span>.</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <span class="azul bold">if</span>(<span class="fuccia bold">condición</span>){<br><span class="comentario">//código</span><br>}<br>
+                                                <span class="azul bold">else</span>{<br><span class="comentario">//código</span><br>}</div>
+                                            <div class="col-sm-6">Cuando el código llega a la sentencia del <span class="azul bold">if</span> se comprueba la condición y, si la misma da como resultado <em>verdadero</em> se ejecuta el código dentro de las llaves;
+                                                si la comprobación da <em>falso</em>, se ejecuta el código dentro de las llaves del bloque <span class="azul bold">else</span>.
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                                <div class="bg-warning card-header">
+                                                    <h4 class="card-title">NOTA:</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">No es obligatorio tener un bloque <span class="azul bold">else</span>. Podriamos querer que nuestro programa 
+                                                    tome un camino si se cumple una condición o siga su camino normal cuando la condición de falsa.</p>
+                                                    <p class="card-text">Por otro lado, <span class="bold">NO</span> es posible tener un bloque <span class="azul bold">else</span> que no tenga inmediatamente antes un bloque <span class="azul bold">if</span>.</p>
+                                                    <p class="card-text">Notar que el bloque <span class="azul bold">else</span> no tiene una condición asociada ya que depende estrictamente del bloque if.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
 
 								<div id="bucles">
 								</div>
