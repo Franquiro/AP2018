@@ -375,8 +375,7 @@
                                     <li class="presentacion"><a href="https://docs.google.com/presentation/d/11rlC-p8UWmJWbitFX0u4eRi7a4OF0HkLTpKEkhm31Ps/edit?usp=sharing" target="_blank">Document Object Model</a></li>
                                     <li class="presentacion"><a href="https://docs.google.com/presentation/d/1aNw82uR0DU_U10lk0BgmvI-acX6ARibRusLYXIu8VEA/edit?usp=sharing" target="_blank">DOM y Eventos</a></li>
                                     <li class="presentacion"><a href="https://docs.google.com/presentation/d/1tRYmYypp-S69UFxLiP5_I7X2LX9ClH5imNV_-K9wmOg/edit?usp=sharing" target="_blank">Consignas del proyecto</a></li>
-                                    <li class="folder"><a href="https://drive.google.com/drive/folders/1d13LzNMBD8PMtsywH_pIGLtmgfTt7m3s?usp=sharing" target="_blank">Entregas Generales</a></li>
-                                    <li class="folder"><a href="https://drive.google.com/drive/folders/1xm9TGaXJKwmIsQWbggKmhrKzu6jlFc8v?usp=sharing"  target="_blank"> Página usando bootstrap grid </a></li-->
+                                    <li class="folder"><a href="https://drive.google.com/drive/folders/1xm9TGaXJKwmIsQWbggKmhrKzu6jlFc8v?usp=sharing"  target="_blank"> Página usando bootstrap grid </a></li>
                                </ul>
 
 
@@ -738,7 +737,7 @@
                                 <div id="operaciones">
                                     <h1>Operadores Aritméticos</h1>
                                     <p>Siempre que tengamos variables numéricas podremos realizar ciertas operaciones aritméticas básicas.</p>
-                                    <div class="container">
+                                    <div class="container-fluid">
                                         <div class="row">
                                     <div class="container col-sm-3"></div>
                                     <div class="container col-sm-6">
@@ -788,36 +787,199 @@
                                     <p>Utilizando la <em>estructura de control</em> <div><span class="azul bold">if</span>(<span class="fuccia bold">condición</span>){<br><span class="comentario">//código</span><br>}</div>
                                     <br>podemos aislar una porción de código que se ejecutará únicamente cuando la condición establecida se compruebe como verdadera.</p>
                                     <p>Asimismo, podemos querer un camino alternativo para cuando la condición <span class="bold">NO</span> se verifique como verdadera esto lo haríamos complementando el bloque del <span class="azul bold">if</span> con un bloque <span class="bold"><span class="azul">else</span> INMEDIATAMENTE</span> despues de la llave de cierre del <span class="azul bold">if</span>.</p>
-                                    <div class="container"> <!-- aca hablo de if{}else{} -->
+                                    <div class="container-fluid"> <!-- aca hablo de if{}else{} -->
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-12 col-md-6">
                                                 <span class="azul bold">if</span>(<span class="fuccia bold">condición</span>){<br><span class="comentario">//código</span><br>}<br>
                                                 <span class="azul bold">else</span>{<br><span class="comentario">//código</span><br>}</div>
-                                            <div class="col-sm-6">Cuando el código llega a la sentencia del <span class="azul bold">if</span> se comprueba la condición y, si la misma da como resultado <em>verdadero</em> se ejecuta el código dentro de las llaves;
+                                            <div class="col-md-6 col-sm-12">Cuando el código llega a la sentencia del <span class="azul bold">if</span> se comprueba la condición y, si la misma da como resultado <em>verdadero</em> se ejecuta el código dentro de las llaves;
                                                 si la comprobación da <em>falso</em>, se ejecuta el código dentro de las llaves del bloque <span class="azul bold">else</span>.
                                             </div>
                                         </div>
-                                        <div class="card"> 
-                                                <div class="bg-warning card-header">
-                                                    <h4 class="card-title">NOTA:</h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <p class="card-text">No es obligatorio tener un bloque <span class="azul bold">else</span>. Podriamos querer que nuestro programa 
-                                                    tome un camino si se cumple una condición o siga su camino normal cuando la condición de falsa.</p>
-                                                    <p class="card-text">Por otro lado, <span class="bold">NO</span> es posible tener un bloque <span class="azul bold">else</span> que no tenga inmediatamente antes un bloque <span class="azul bold">if</span>.</p>
-                                                    <p class="card-text">Notar que el bloque <span class="azul bold">else</span> no tiene una condición asociada ya que depende estrictamente del bloque if.</p>
-                                                </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                    <div class="bg-info card"> 
+                                                        <div class=" card-header">
+                                                            <h4 class="card-title">NOTA:</h4>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <p class="card-text">No es obligatorio tener un bloque <span class="azul bold">else</span>. Podriamos querer que nuestro programa 
+                                                            tome un camino si se cumple una condición o siga su camino normal cuando la condición de falsa.</p>
+                                                            <p class="card-text">Por otro lado, <span class="bold">NO</span> es posible tener un bloque <span class="azul bold">else</span> que no tenga inmediatamente antes un bloque <span class="azul bold">if</span>.</p>
+                                                            <p class="card-text">Notar que el bloque <span class="azul bold">else</span> no tiene una condición asociada ya que depende estrictamente del bloque if.</p>
+                                                        </div>
+                                                    </div>
                                             </div>
+                                        </div>  
+                                    </div>
+                                    <div class="container-fluid">
+                                        <h2>Operadores Comparativos</h2>
+                                        <p>Se utilizan para comparar variables. Devuelven <span class="azul">true</span> cuando la comparación se verifica 
+                                            y <span class="rojo">false</span> cuando la comparación no se verifica</p>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <table>
+                                                        <tr>
+                                                            <th class="text-center">
+                                                                Operador
+                                                            </th>
+                                                            <th class="pad10">
+                                                                Descripción
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">&gt;</td>
+                                                            <td class="pad10">Mayor que</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">&lt;</td>
+                                                            <td class="pad10">Menor que</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">&gt;=</td>
+                                                            <td class="pad10">Mayor o igual que</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">&lt;=</td>
+                                                            <td class="pad10">Menor o igual que</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">==</td>
+                                                            <td class="pad10">Igualdad (valor)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">===</td>
+                                                            <td class="pad10">Identidad (valor y tipo de variable)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">!=</td>
+                                                            <td class="pad10">Desigualdad (valor)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center bold">!==</td>
+                                                            <td class="pad10">Sin Identidad (valor y tipo de variable)</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <h2>Operadores Lógicos</h2>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h3>AND (<span class="fuccia bold">&&</span>)</h3>
+                                                <p>Devuelve <span class="azul bold">true</span> cuando todas las condiciones unidas por el operador son verdaderas.</p>
+                                                <p>Devuelve <span class="rojo bold">false</span> cuando alguna de las condiciones unidas por el operador sea falsa.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <table class="borde-simple text-center">
+                                                    <caption>TABLA DE VERDAD</caption>
+                                                    <tr>
+                                                        <th class="pad10 borde-simple">Condición 1</th>
+                                                        <th class="pad10 borde-simple">Condición 2</th>
+                                                        <th class="pad10 borde-simple">Resultado</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">V</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">F</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">F</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">F</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h3>OR (<span class="fuccia bold">||</span>)</h3>
+                                                <p>Devuelve <span class="azul bold">true</span> cuando alguna de las condiciones unidas por el operador sea verdadera.</p>
+                                                <p>Devuelve <span class="rojo bold">false</span> cuando todas las condiciones unidas por el operador son falsas.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <table class="borde-simple text-center">
+                                                    <caption>TABLA DE VERDAD</caption>
+                                                    <tr>
+                                                        <th class="pad10 borde-simple">Condición 1</th>
+                                                        <th class="pad10 borde-simple">Condición 2</th>
+                                                        <th class="pad10 borde-simple">Resultado</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">V</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">V</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">V</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">F</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                                
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h3>NOT (<span class="fuccia bold">!</span>)</h3>
+                                                <p>Devuelve <span class="azul bold">true</span> cuando la condicion negada fuera originalmente falsa.</p>
+                                                <p>Devuelve <span class="rojo bold">false</span> cuando la condicion negada fuera originalmente verdadera.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <table class="borde-simple text-center">
+                                                    <caption>TABLA DE VERDAD</caption>
+                                                    <tr>
+                                                        <th class="pad10 borde-simple">Condición Original</th>
+                                                        <th class="pad10 borde-simple">Resultado</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">V</td>
+                                                        <td class="borde-simple">F</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="borde-simple">F</td>
+                                                        <td class="borde-simple">V</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                                    
+                                        </div>
                                     </div>
                                 </div>
 
-								<div id="bucles">
+								<div id="bucles" class="text-justify">
+                                    <h1 class="text-center">Bucles</h1>
+                                    <p>Un <span class="bold">bucle</span> o <span class="bold">ciclo de repetición</span> es una estructura de control que
+                                    nos permite ejecutar un determinado código, cuantas veces sea necesario, en función de una condición dada.</p>
 								</div>
 
-								<div id="funciones">
+								<div id="funciones" class="text-justify">
 								</div>
 
-								<div id="arreglos">
+								<div id="arreglos" class="text-justify">
 								</div>
 								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                             </div>

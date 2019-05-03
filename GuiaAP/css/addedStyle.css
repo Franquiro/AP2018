@@ -42,7 +42,11 @@ li.foto{list-style-image:url('../img/icons/jpeg.png');}
 #phaser-image {
     background-color: #5912dd;
 }
+.div-centrado{margin:auto;}
+.borde-simple{border:1px solid #000000; border-collapse: collapse;}
+.pad10{padding:0 10px;}
 .azul{color:rgb(78, 153, 223);}
+.rojo{color:rgb(255, 78, 78);}
 .fuccia{color:#ff009d;}
 .turquesa{color:rgb(25, 142, 189);}
 .bold{font-weight:bold;}
