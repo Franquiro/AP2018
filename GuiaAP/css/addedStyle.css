@@ -54,3 +54,5 @@ li.foto{list-style-image:url('../img/icons/jpeg.png');}
 .margenSup{margin:20px auto;}
 .comentario{color:rgb(8, 80, 8);}
 #listaHTML{margin-left:10%; margin-right:10%;}
+.w100{width:100%;}
+.p20{padding:50px 10%;}
